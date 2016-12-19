@@ -1,0 +1,30 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nal}[2015/11/18 macros for preparing numeryczna algebra liniowa]
+
+%Funkcja warto/s/c bezwzgl/edna |x|
+\newcommand{\abs}[1]{\left| #1 \right|}
+
+%Oznaczenie zmiennych wektorow
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+%Oznaczenie macierzy sta/lych wsp/o/lczynnik/ow
+\newcommand{\mat}[1]{\mathbf{#1}}
+
+%arcus tanges
+\DeclareMathOperator*{\atan}{atan}
+%Norma kwadratowa ||x||
+\newcommand{\norma}[1]{\left\|#1\right\|}
+
+%Moc zbioru
+\newcommand{\moc}[1]{\overline{#1}}
+
+\newenvironment{przyklad}[1]{\normalsize \textbf{#1 Przykład.}}{}
+\newenvironment{twierdzenie}[1]{\normalsize \textbf{#1 Twierdzenie.}}{}
+\newenvironment{algorytmwyznaczaniaparametrow}[1]{\normalsize \textbf{#1 Algorytm wyznaczania parametrów}}{}
+\newenvironment{algorytmodtworzeniaparametrow}[1]{\normalsize \textbf{#1 Algorytm odtworzenia parametrów}}{}
+\newenvironment{krokeliminacyjnyzapomocaciaguobrotowskalowanychgivensa}[1]{\normalsize \textbf{#1 Krok eliminacyjny za pomocą ciągu obrotów skalowanych Givensa}}{}
+\newenvironment{analizableduzaokraglen}[1]{\normalsize \textbf{#1 Analiza błędu zaokrągleń}}{}
+\newenvironment{uwagi}[1]{\normalsize \textbf{#1 Uwagi.}}{}
+\newenvironment{algorytm}[1]{\normalsize \textbf{#1 Algorytm}}{}
+\newenvironment{zadanie}[1]{\normalsize\textbf{#1 Zadanie.}}{}
+\endinput
